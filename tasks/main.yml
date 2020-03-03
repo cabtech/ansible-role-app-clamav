@@ -1,0 +1,11 @@
+---
+
+- name: 'install Clam AV packages'
+  apt:
+    name: '{{clamav_pkgs}}'
+    state: '{{clamav_state}}'
+    update_cache: '{{clamav_update_cache}}'
+  become: true
+  tags: ct-clamav
+
+...

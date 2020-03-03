@@ -1,3 +1,5 @@
 ---
 clamav_pkgs: ['clamav']
+clamav_state: present
+clamav_update_cache: true
 ...

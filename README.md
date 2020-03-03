@@ -3,9 +3,11 @@
 Set up [Clam Anti Virus](https://www.clamav.net/) on Linux
 
 ## Default Variables
-| Name | Purpose |
-| ---- | ------- |
-| clamav_pkgs | List of packages to install |
+| Name | Type | Purpose |
+| ---- | ---- | ------- |
+| clamav_pkgs | List | ... of packages to install |
+| clamav_state | string | absent or present |
+| clamav_update_cache | Boolean | whether to update package cache first |
 
 ## Role Dependencies
 None
@@ -13,6 +15,6 @@ None
 ## To Do
 Add support for RedHat based distros
 
-## Supporte Distros
+## Supported Distros
 Ubuntu 16+
 ****
