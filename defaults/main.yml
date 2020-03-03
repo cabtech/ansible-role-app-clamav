@@ -1,5 +1,5 @@
 ---
-clamav_pkgs: ['clamav']
+clamav_pkgs: ['clamav', 'clamav-daemon']
 clamav_state: present
 clamav_update_cache: true
 ...
