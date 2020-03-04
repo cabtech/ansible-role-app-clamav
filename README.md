@@ -21,6 +21,6 @@ None
 Ubuntu 16+ with `systemd`
 
 ## To Do
-Set up scheduled filesystem scans
-Add support for RedHat based distros
+- Set up scheduled filesystem scans
+- Add support for RedHat based distros
 ****
