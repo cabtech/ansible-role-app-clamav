@@ -8,4 +8,11 @@
   become: true
   tags: ct-clamav
 
+- name: 'ensure freshclam is running to keep definitions up to date'
+  systemd:
+    name: '{{clamav_freshclam_name}}'
+    state: '{{clamav_freshclam_state}}'
+    enabled: '{{clamav_freshclam_onboot}}'
+  become: true
+  tags: ct-clamav
 ...
