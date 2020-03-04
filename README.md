@@ -1,6 +1,8 @@
 ----
 # ansible-role-app-clamav
 Set up [Clam Anti Virus](https://www.clamav.net/) on Linux
+Freshclam is used to keep the virus definitions up to date
+No automated virus scans are set up - just used for ad hoc checks
 
 ## Default Variables
 | Name | Type | Value | Purpose |
@@ -19,5 +21,6 @@ None
 Ubuntu 16+ with `systemd`
 
 ## To Do
+Set up scheduled filesystem scans
 Add support for RedHat based distros
 ****
