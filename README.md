@@ -8,9 +8,9 @@
 | Name | Type | Value | Purpose |
 | ---- | ---- | ----- | ------- |
 | clamav_freshclam_name   | string  | `clamav-freshclam.service` | name of the service |
-| clamav_freshclam_onboot | string  | enabled | choice(enabled, disabled) |
+| clamav_freshclam_onboot | Boolean | true | whether to start service on boot |
 | clamav_freshclam_state  | string  | started | arg to systemctl |
-| clamav_pkgs             | list    | see `defaults/main.yml` | packages to install |
+| clamav_pkgs             | list    | | packages to install |
 | clamav_state            | string  | present | choice(absent, present) |
 | clamav_update_cache     | Boolean | true | whether to update package cache first |
 

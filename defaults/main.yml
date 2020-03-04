@@ -1,6 +1,6 @@
 ---
 clamav_freshclam_name: clamav-freshclam.service
-clamav_freshclam_onboot: enabled
+clamav_freshclam_onboot: true
 clamav_freshclam_state: started
 clamav_pkgs: ['clamav', 'clamav-daemon']
 clamav_state: present
