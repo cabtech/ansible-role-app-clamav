@@ -1,18 +1,18 @@
 ---
 
-- name: 'install Clam AV packages'
-  apt:
-    name: '{{clamav_pkgs}}'
-    state: '{{clamav_state}}'
-    update_cache: '{{clamav_update_cache}}'
+- name: "Install Clam AV packages"
+  ansible.builtin.apt:
+    name: "{{ clamav_pkgs }}"
+    state: "{{ clamav_state }}"
+    update_cache: "{{ clamav_update_cache }}"
   become: true
-  tags: ct-clamav
+  tags: ["ct-clamav"]
 
-- name: 'ensure freshclam is running to keep definitions up to date'
-  systemd:
-    name: '{{clamav_freshclam_name}}'
-    state: '{{clamav_freshclam_state}}'
-    enabled: '{{clamav_freshclam_onboot}}'
+- name: "Ensure freshclam is running to keep definitions up to date"
+  ansible.builtin.systemd:
+    enabled: "{{ clamav_freshclam_onboot }}"
+    name: "{{ clamav_freshclam_name }}"
+    state: "{{ clamav_freshclam_state }}"
   become: true
-  tags: ct-clamav
+  tags: ["ct-clamav"]
 ...
